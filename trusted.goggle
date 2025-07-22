@@ -1,0 +1,21 @@
+! name: Trusted Food & Health Sources
+! description: Show only results from selected regulatory and financial domains
+! public: false
+! author: BiaAnalytical
+
+$discard
+! Discard everything by default
+
+! Include selected trusted domains
+$boost,site=webgate.ec.europa.eu
+$boost,site=fda.gov
+$boost,site=ft.com
+$boost,site=ec.europa.eu
+$boost,site=ec.europa.eu/food
+$boost,site=wsj.com
+$boost,site=fao.org
+$boost,site=who.int
+$boost,site=bloomberg.com
+$boost,site=usda.gov
+$boost,site=reuters.com
+$boost,site=efsa.europa.eu
