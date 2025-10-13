@@ -1,0 +1,33 @@
+! name: Broad Sources Filter
+! description: Exclude junk only, allow emerging and alternative sources
+! public: false
+! author: BiaMetric
+
+! Exclude social media and junk domains
+$discard,site=reddit.com
+$discard,site=youtube.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=facebook.com
+$discard,site=instagram.com
+$discard,site=tiktok.com
+$discard,site=pinterest.com
+$discard,site=quora.com
+$discard,site=wikipedia.org
+
+! Exclude entertainment and lifestyle
+$discard,site=buzzfeed.com
+$discard,site=huffpost.com
+$discard,site=dailymail.co.uk
+$discard,site=thesun.co.uk
+$discard,site=mirror.co.uk
+
+! Exclude low-quality content farms
+$discard,site=medium.com
+$discard,site=substack.com
+$discard,site=blogspot.com
+$discard,site=wordpress.com
+$discard,site=tumblr.com
+$discard,site=wix.com
+
+! Allow everything else (blogs, local news, trade sites, etc.)

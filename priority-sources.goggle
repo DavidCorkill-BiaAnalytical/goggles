@@ -1,0 +1,66 @@
+! name: Priority Food Safety & Commodity Sources
+! description: High-trust regulatory and industry-specific sources
+! public: false
+! author: BiaMetric
+
+! Exclude social media and junk domains
+$discard,site=reddit.com
+$discard,site=youtube.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=facebook.com
+$discard,site=instagram.com
+$discard,site=tiktok.com
+$discard,site=pinterest.com
+$discard,site=quora.com
+$discard,site=wikipedia.org
+
+! Top priority - EU regulatory and alert systems
+$boost=10,site=webgate.ec.europa.eu
+$boost=10,site=efsa.europa.eu
+
+! High priority - International food safety authorities
+$boost=9,site=ec.europa.eu/food
+$boost=9,site=food.ec.europa.eu
+$boost=9,site=fda.gov
+$boost=9,site=food.gov.uk
+$boost=9,site=fsai.ie
+$boost=9,site=foodstandards.gov.au
+
+! High priority - International organizations
+$boost=9,site=fao.org
+$boost=9,site=who.int
+$boost=9,site=codexalimentarius.org
+
+! Commodity trading and market intelligence
+$boost=8,site=tridge.com
+$boost=8,site=agricensus.com
+$boost=8,site=icco.org
+$boost=8,site=ico.org
+$boost=8,site=worldcoffeeportal.com
+$boost=8,site=teaandcoffee.net
+
+! Industry-specific associations and standards
+$boost=7,site=globalgap.org
+$boost=7,site=rainforest-alliance.org
+$boost=7,site=fairtrade.net
+$boost=7,site=rspo.org
+$boost=7,site=bonsucro.com
+
+! Additional regulatory authorities
+$boost=7,site=usda.gov
+$boost=7,site=canada.ca
+$boost=7,site=hc-sc.gc.ca
+$boost=7,site=echa.europa.eu
+$boost=7,site=eea.europa.eu
+$boost=7,site=eur-lex.europa.eu
+
+! Industry news and analysis
+$boost=6,site=just-food.com
+$boost=6,site=foodnavigator.com
+$boost=6,site=foodnavigator-asia.com
+$boost=6,site=foodnavigator-usa.com
+$boost=6,site=agweb.com
+$boost=6,site=freshplaza.com
+$boost=6,site=foodsafetymagazine.com
+$boost=6,site=foodqualityandsafety.com
