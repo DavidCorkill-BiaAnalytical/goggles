@@ -1,9 +1,9 @@
-! name: Official News & Government Sources
-! description: Government authorities and premium financial/news outlets
+! name: Official News & Government Sources (Regenerated)
+! description: Government authorities and premium financial/news outlets. Excludes food safety and commodity sources.
 ! public: false
 ! author: BiaMetric
 
-! Exclude social media and junk domains
+! --- STANDARD DISCARDS ---
 $discard,site=reddit.com
 $discard,site=youtube.com
 $discard,site=twitter.com
@@ -15,6 +15,38 @@ $discard,site=pinterest.com
 $discard,site=quora.com
 $discard,site=wikipedia.org
 
+! --- EXCLUDE PRIORITY/COMMODITY SOURCES ---
+$discard,site=webgate.ec.europa.eu
+$discard,site=ec.europa.eu/food
+$discard,site=food.ec.europa.eu
+$discard,site=food.gov.uk
+$discard,site=fsai.ie
+$discard,site=foodstandards.gov.au
+$discard,site=fao.org
+$discard,site=who.int
+$discard,site=codexalimentarius.org
+$discard,site=tridge.com
+$discard,site=agricensus.com
+$discard,site=icco.org
+$discard,site=ico.org
+$discard,site=worldcoffeeportal.com
+$discard,site=teaandcoffee.net
+$discard,site=globalgap.org
+$discard,site=rainforest-alliance.org
+$discard,site=fairtrade.net
+$discard,site=rspo.org
+$discard,site=bonsucro.com
+$discard,site=eur-lex.europa.eu
+$discard,site=just-food.com
+$discard,site=foodnavigator.com
+$discard,site=foodnavigator-asia.com
+$discard,site=foodnavigator-usa.com
+$discard,site=agweb.com
+$discard,site=freshplaza.com
+$discard,site=foodsafetymagazine.com
+$discard,site=foodqualityandsafety.com
+
+! --- TOP PRIORITY BOOSTS ---
 ! Government and regulatory sites
 $boost=6,site=ec.europa.eu
 $boost=6,site=efsa.europa.eu
