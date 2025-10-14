@@ -17,7 +17,7 @@ $discard,site=wikipedia.org
 
 ! --- EXCLUDE PRIORITY/COMMODITY SOURCES ---
 $discard,site=webgate.ec.europa.eu
-$discard,site=ec.europa.eu/food
+$discard,site=ec.europa.eu
 $discard,site=food.ec.europa.eu
 $discard,site=food.gov.uk
 $discard,site=fsai.ie
