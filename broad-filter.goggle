@@ -1,9 +1,9 @@
-! name: Broad Sources Filter
-! description: Exclude junk only, allow emerging and alternative sources
+! name: Broad Sources Filter (Regenerated)
+! description: Excludes junk and all boosted priority/official sources. Allows emerging and alternative sources.
 ! public: false
 ! author: BiaMetric
 
-! Exclude social media and junk domains
+! --- EXCLUDE JUNK & SOCIAL MEDIA ---
 $discard,site=reddit.com
 $discard,site=youtube.com
 $discard,site=twitter.com
@@ -15,19 +15,91 @@ $discard,site=pinterest.com
 $discard,site=quora.com
 $discard,site=wikipedia.org
 
-! Exclude entertainment and lifestyle
+! --- EXCLUDE ENTERTAINMENT & LIFESTYLE ---
 $discard,site=buzzfeed.com
 $discard,site=huffpost.com
 $discard,site=dailymail.co.uk
 $discard,site=thesun.co.uk
 $discard,site=mirror.co.uk
 
-! Exclude low-quality content farms
+! --- EXCLUDE LOW-QUALITY CONTENT FARMS ---
 $discard,site=medium.com
 $discard,site=substack.com
 $discard,site=blogspot.com
 $discard,site=wordpress.com
 $discard,site=tumblr.com
 $discard,site=wix.com
+
+! --- EXCLUDE ALL BOOSTED PRIORITY SOURCES ---
+$discard,site=webgate.ec.europa.eu
+$discard,site=efsa.europa.eu
+$discard,site=ec.europa.eu/food
+$discard,site=food.ec.europa.eu
+$discard,site=fda.gov
+$discard,site=food.gov.uk
+$discard,site=fsai.ie
+$discard,site=foodstandards.gov.au
+$discard,site=fao.org
+$discard,site=who.int
+$discard,site=codexalimentarius.org
+$discard,site=tridge.com
+$discard,site=agricensus.com
+$discard,site=icco.org
+$discard,site=ico.org
+$discard,site=worldcoffeeportal.com
+$discard,site=teaandcoffee.net
+$discard,site=globalgap.org
+$discard,site=rainforest-alliance.org
+$discard,site=fairtrade.net
+$discard,site=rspo.org
+$discard,site=bonsucro.com
+$discard,site=usda.gov
+$discard,site=canada.ca
+$discard,site=hc-sc.gc.ca
+$discard,site=echa.europa.eu
+$discard,site=eea.europa.eu
+$discard,site=eur-lex.europa.eu
+$discard,site=just-food.com
+$discard,site=foodnavigator.com
+$discard,site=foodnavigator-asia.com
+$discard,site=foodnavigator-usa.com
+$discard,site=agweb.com
+$discard,site=freshplaza.com
+$discard,site=foodsafetymagazine.com
+$discard,site=foodqualityandsafety.com
+
+! --- EXCLUDE ALL BOOSTED OFFICIAL SOURCES ---
+$discard,site=ec.europa.eu
+$discard,site=epa.gov
+$discard,site=agriculture.gov.au
+$discard,site=mpi.govt.nz
+$discard,site=gov.uk
+$discard,site=defra.gov.uk
+$discard,site=worldbank.org
+$discard,site=imf.org
+$discard,site=wto.org
+$discard,site=oecd.org
+$discard,site=worldtradereview.com
+$discard,site=reuters.com
+$discard,site=bloomberg.com
+$discard,site=ft.com
+$discard,site=wsj.com
+$discard,site=economist.com
+$discard,site=marketwatch.com
+$discard,site=cnbc.com
+$discard,site=barrons.com
+$discard,site=bbc.com
+$discard,site=bbc.co.uk
+$discard,site=theguardian.com
+$discard,site=nytimes.com
+$discard,site=washingtonpost.com
+$discard,site=apnews.com
+$discard,site=afp.com
+$discard,site=scmp.com
+$discard,site=straitstimes.com
+$discard,site=japantimes.co.jp
+$discard,site=thehindu.com
+$discard,site=dawn.com
+$discard,site=channelnewsasia.com
 
 ! Allow everything else (blogs, local news, trade sites, etc.)
