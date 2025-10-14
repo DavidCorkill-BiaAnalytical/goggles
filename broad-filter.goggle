@@ -33,7 +33,7 @@ $discard,site=wix.com
 ! --- EXCLUDE ALL BOOSTED PRIORITY SOURCES ---
 $discard,site=webgate.ec.europa.eu
 $discard,site=efsa.europa.eu
-$discard,site=ec.europa.eu/food
+$discard,site=ec.europa.eu
 $discard,site=food.ec.europa.eu
 $discard,site=fda.gov
 $discard,site=food.gov.uk
