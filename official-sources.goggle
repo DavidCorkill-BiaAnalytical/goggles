@@ -46,22 +46,6 @@ $discard,site=freshplaza.com
 $discard,site=foodsafetymagazine.com
 $discard,site=foodqualityandsafety.com
 
-! --- TOP PRIORITY BOOSTS ---
-! Government and regulatory sites
-$boost=6,site=ec.europa.eu
-$boost=6,site=efsa.europa.eu
-$boost=6,site=echa.europa.eu
-$boost=6,site=eea.europa.eu
-$boost=6,site=fda.gov
-$boost=6,site=usda.gov
-$boost=6,site=epa.gov
-$boost=6,site=canada.ca
-$boost=6,site=hc-sc.gc.ca
-$boost=6,site=agriculture.gov.au
-$boost=6,site=mpi.govt.nz
-$boost=6,site=gov.uk
-$boost=6,site=defra.gov.uk
-
 ! International economic organizations
 $boost=5,site=worldbank.org
 $boost=5,site=imf.org
