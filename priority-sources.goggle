@@ -16,12 +16,6 @@ $discard,site=quora.com
 $discard,site=wikipedia.org
 
 ! --- EXCLUDE OFFICIAL/NEWS SOURCES ---
-$discard,site=ec.europa.eu
-$discard,site=epa.gov
-$discard,site=agriculture.gov.au
-$discard,site=mpi.govt.nz
-$discard,site=gov.uk
-$discard,site=defra.gov.uk
 $discard,site=worldbank.org
 $discard,site=imf.org
 $discard,site=wto.org
@@ -99,3 +93,7 @@ $boost=6,site=agweb.com
 $boost=6,site=freshplaza.com
 $boost=6,site=foodsafetymagazine.com
 $boost=6,site=foodqualityandsafety.com
+$boost=6,site=epa.gov
+$boost=6,site=agriculture.gov.au
+$boost=6,site=mpi.govt.nz
+$boost=6,site=defra.gov.uk
