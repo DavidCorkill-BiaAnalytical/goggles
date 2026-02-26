@@ -1,0 +1,116 @@
+! name: Combined Priority & Broad Sources
+! description: Merges priority food safety/commodity sources with broad web coverage. Excludes junk and official news/government sources (covered by official-sources goggle). Priority domains get higher boosts.
+! public: false
+! author: BiaMetric
+
+! --- STANDARD DISCARDS (junk & social media) ---
+$discard,site=reddit.com
+$discard,site=youtube.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=facebook.com
+$discard,site=instagram.com
+$discard,site=tiktok.com
+$discard,site=pinterest.com
+$discard,site=quora.com
+$discard,site=wikipedia.org
+
+! --- EXCLUDE ENTERTAINMENT & LIFESTYLE ---
+$discard,site=buzzfeed.com
+$discard,site=huffpost.com
+$discard,site=dailymail.co.uk
+$discard,site=thesun.co.uk
+$discard,site=mirror.co.uk
+
+! --- EXCLUDE LOW-QUALITY CONTENT FARMS ---
+$discard,site=medium.com
+$discard,site=substack.com
+$discard,site=blogspot.com
+$discard,site=wordpress.com
+$discard,site=tumblr.com
+$discard,site=wix.com
+
+! --- EXCLUDE OFFICIAL/NEWS SOURCES (covered by official-sources goggle) ---
+$discard,site=worldbank.org
+$discard,site=imf.org
+$discard,site=wto.org
+$discard,site=oecd.org
+$discard,site=worldtradereview.com
+$discard,site=reuters.com
+$discard,site=bloomberg.com
+$discard,site=ft.com
+$discard,site=wsj.com
+$discard,site=economist.com
+$discard,site=marketwatch.com
+$discard,site=cnbc.com
+$discard,site=barrons.com
+$discard,site=bbc.com
+$discard,site=bbc.co.uk
+$discard,site=theguardian.com
+$discard,site=nytimes.com
+$discard,site=washingtonpost.com
+$discard,site=apnews.com
+$discard,site=afp.com
+$discard,site=scmp.com
+$discard,site=straitstimes.com
+$discard,site=japantimes.co.jp
+$discard,site=thehindu.com
+$discard,site=dawn.com
+$discard,site=channelnewsasia.com
+
+! --- TOP PRIORITY BOOSTS (from priority-sources goggle) ---
+! EU regulatory and alert systems
+$boost=10,site=webgate.ec.europa.eu
+$boost=10,site=efsa.europa.eu
+
+! International food safety authorities
+$boost=9,site=ec.europa.eu
+$boost=9,site=food.ec.europa.eu
+$boost=9,site=fda.gov
+$boost=9,site=food.gov.uk
+$boost=9,site=fsai.ie
+$boost=9,site=foodstandards.gov.au
+
+! International organizations
+$boost=9,site=fao.org
+$boost=9,site=who.int
+$boost=9,site=codexalimentarius.org
+
+! Commodity trading and market intelligence
+$boost=8,site=tridge.com
+$boost=8,site=agricensus.com
+$boost=8,site=icco.org
+$boost=8,site=ico.org
+$boost=8,site=worldcoffeeportal.com
+$boost=8,site=teaandcoffee.net
+
+! Industry-specific associations and standards
+$boost=7,site=globalgap.org
+$boost=7,site=rainforest-alliance.org
+$boost=7,site=fairtrade.net
+$boost=7,site=rspo.org
+$boost=7,site=bonsucro.com
+
+! Additional regulatory authorities
+$boost=7,site=usda.gov
+$boost=7,site=canada.ca
+$boost=7,site=hc-sc.gc.ca
+$boost=7,site=echa.europa.eu
+$boost=7,site=eea.europa.eu
+$boost=7,site=eur-lex.europa.eu
+
+! Industry news and analysis
+$boost=6,site=just-food.com
+$boost=6,site=foodnavigator.com
+$boost=6,site=foodnavigator-asia.com
+$boost=6,site=foodnavigator-usa.com
+$boost=6,site=agweb.com
+$boost=6,site=freshplaza.com
+$boost=6,site=foodsafetymagazine.com
+$boost=6,site=foodqualityandsafety.com
+$boost=6,site=epa.gov
+$boost=6,site=agriculture.gov.au
+$boost=6,site=mpi.govt.nz
+$boost=6,site=defra.gov.uk
+
+! Allow everything else (blogs, local news, trade sites, etc.)
